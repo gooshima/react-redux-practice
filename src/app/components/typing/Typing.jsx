@@ -3,21 +3,31 @@
  */
 import React, { PropTypes } from 'react';
 
+//情報エリア
+import Info from './Info';
+
 const Typing = ({active, msg, onClickA, onTextChanged}) => {
   return (
-    <div>
-      <span>msg : {msg}</span><br />
-      <span>active : {String(active)}</span><br />
-      <input type="text" onChange={e => {
-        e.preventDefault();
-        onTextChanged(e)
-      }}/>
-      <button onClick={e => {
-        e.preventDefault();
-        onClickA()
-      }}> 押してみてください
-      </button>
-    </div>
+
+    <section className="app-main">
+
+      <Info />
+
+      <section id="app-main-typingArea">
+        <span>msg : {msg}</span><br />
+        <span>active : {String(active)}</span><br />
+        <input type="text" onChange={e => {
+          e.preventDefault();
+          onTextChanged(e)
+        }}/>
+        <button onClick={e => {
+          e.preventDefault();
+          onClickA()
+        }}> 押してみてください
+        </button>
+      </section>
+
+    </section>
   )
 }
 
