@@ -13,7 +13,7 @@ export const setMsg = (argMsg) => {
 }
 
 export const heyTestAction = (arg) => {
-  let result = "ajaxなどでしゅとくしたデータです。arg was:" + arg
+  let result = "ajaxなどで取得したデータです。arg was:" + arg
   return {
     type: 'HEY_TEST',
     msgByAjax: result
