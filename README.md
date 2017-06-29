@@ -1,2 +1,2 @@
 # react-redux-practice
-practice repo for react-dedux
+practice repo for react-redux
