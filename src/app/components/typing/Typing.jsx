@@ -23,7 +23,7 @@ const Typing = ({active, msg, onClickA, onTextChanged}) => {
         <button onClick={e => {
           e.preventDefault();
           onClickA()
-        }}> 押してみてください
+        }}> 押してください
         </button>
       </section>
 
